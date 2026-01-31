@@ -8,6 +8,13 @@
       "when": 1769867400993,
       "tag": "0000_same_newton_destine",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1769870404582,
+      "tag": "0001_groovy_warlock",
+      "breakpoints": true
     }
   ]
 }
