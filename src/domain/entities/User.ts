@@ -4,13 +4,18 @@ export enum Role {
     ADMIN = "admin",
 }
 
-export interface User {
-    id: string;
-    name: string;
-    email: string;
-    emailVerified: boolean;
-    image: string;
-    createdAt: Date;
-    updatedAt: Date;
-    role: Role;
+
+
+export class User {
+    constructor(
+        public readonly id: string, 
+        public readonly name: string, 
+        public readonly email: string, 
+        public readonly emailVerified: boolean, 
+        public readonly image: string, 
+        public readonly createdAt: Date, 
+        public readonly updatedAt: Date, 
+        public readonly role: Role,
+        public readonly groupId?: string
+    ) {}
 }
