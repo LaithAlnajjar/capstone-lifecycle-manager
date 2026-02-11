@@ -1,4 +1,4 @@
-export enum Status {
+export enum AcademicTermStatus {
     UPCOMING = "upcoming",
     ACTIVE = "active",
     COMPLETED = "completed",
@@ -11,6 +11,6 @@ export interface AcademicTerm {
     endDate: Date;
     createdAt: Date;
     isActive: boolean;
-    status: Status;
+    status: AcademicTermStatus;
     max_group_size: number;
 }

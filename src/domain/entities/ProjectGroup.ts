@@ -3,7 +3,7 @@ export enum Visibility {
     PRIVATE = "private",
 }
 
-export enum Status {
+export enum ProjectGroupStatus {
     FORMING = "forming",
     BIDDING = "bidding",
     ACTIVE = "active",
@@ -15,7 +15,7 @@ export interface ProjectGroup {
     name: string;
     term_id: string;
     visibility: Visibility;
-    status: Status;
+    status: ProjectGroupStatus;
     invite_code: string;
     createdAt: Date;
     updatedAt: Date;
