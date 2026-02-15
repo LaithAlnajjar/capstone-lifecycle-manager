@@ -10,14 +10,15 @@ export enum ProjectGroupStatus {
     COMPLETED = "completed",
 }
 
-export interface ProjectGroup {
-    id: string;
-    name: string;
-    term_id: string;
-    visibility: Visibility;
-    status: ProjectGroupStatus;
-    invite_code: string;
-    createdAt: Date;
-    updatedAt: Date;
-   
+export class ProjectGroup {
+    constructor(
+        public readonly id: string,
+        public readonly name: string,
+        public readonly term_id: string,
+        public readonly visibility: Visibility,
+        public readonly status: ProjectGroupStatus,
+        public readonly invite_code: string,
+        public readonly createdAt: Date,
+        public readonly updatedAt: Date,
+    ) {}
 }

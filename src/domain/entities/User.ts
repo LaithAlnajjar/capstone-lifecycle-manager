@@ -4,8 +4,6 @@ export enum Role {
     ADMIN = "admin",
 }
 
-
-
 export class User {
     constructor(
         public readonly id: string, 

@@ -1,11 +1,13 @@
-export interface Project {
-    id: string;
-    group_id: string;
-    supervisor_id: string;
-    title: string;
-    abstract: string;
-    repository_url: string;
-    final_grade: number | null;
-    createdAt: Date;
-    updatedAt: Date;
+export class Project {
+    constructor(
+        public readonly id: string,
+        public readonly group_id: string,
+        public readonly supervisor_id: string,
+        public readonly title: string,
+        public readonly abstract: string,
+        public readonly repository_url: string,
+        public readonly final_grade: number | null,
+        public readonly createdAt: Date,
+        public readonly updatedAt: Date,
+    ) {}
 }

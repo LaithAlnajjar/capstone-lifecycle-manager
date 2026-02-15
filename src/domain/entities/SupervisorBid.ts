@@ -4,11 +4,14 @@ export enum BidStatus {
     REJECTED = "rejected",
 }
 
-export interface SupervisorBid {
-    id: string;
-    group_id: string;
-    supervisor_id: string;
-    ranking: number;
-    is_approved: boolean;
-    status: BidStatus;
+export class SupervisorBid {
+    constructor(
+        public readonly id: string,
+        public readonly group_id: string,
+        public readonly supervisor_id: string,
+        public readonly ranking: number,
+        public readonly isApproved: boolean,
+        public readonly status: BidStatus,
+        public readonly createdAt: Date,
+    ) {}
 }

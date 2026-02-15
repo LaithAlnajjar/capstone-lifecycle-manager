@@ -5,13 +5,15 @@ export enum MilestoneStatus {
     OVERDUE = "overdue",
 }
 
-export interface Milestone {
-    id: string;
-    project_id: string;
-    title: string;
-    description: string;
-    due_date: Date;
-    status: MilestoneStatus;
-    createdAt: Date;
-    updatedAt: Date;
+export class Milestone {
+    constructor(
+        public readonly id: string,
+        public readonly project_id: string,
+        public readonly title: string,
+        public readonly description: string,
+        public readonly due_date: Date,
+        public readonly status: MilestoneStatus,
+        public readonly createdAt: Date,
+        public readonly updatedAt: Date,
+    ) {}
 }

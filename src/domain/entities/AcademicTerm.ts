@@ -4,13 +4,15 @@ export enum AcademicTermStatus {
     COMPLETED = "completed",
 }
 
-export interface AcademicTerm {
-    id: string;
-    name: string;
-    startDate: Date;
-    endDate: Date;
-    createdAt: Date;
-    isActive: boolean;
-    status: AcademicTermStatus;
-    max_group_size: number;
+export class AcademicTerm {
+    constructor(
+        public readonly id: string,
+        public readonly name: string,
+        public readonly startDate: Date,
+        public readonly endDate: Date,
+        public readonly createdAt: Date,
+        public readonly isActive: boolean,
+        public readonly status: AcademicTermStatus,
+        public readonly max_group_size: number,
+    ) {}
 }

@@ -38,6 +38,7 @@ export class UserRepository implements IUserRepository {
             createdAt: user.createdAt,
             updatedAt: user.updatedAt,
             role: user.role,
+            group_id: user.groupId ?? null,
         }).returning();
 
         return new User(
