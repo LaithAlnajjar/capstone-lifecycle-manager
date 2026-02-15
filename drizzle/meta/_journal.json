@@ -15,6 +15,13 @@
       "when": 1769870404582,
       "tag": "0001_groovy_warlock",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771139627237,
+      "tag": "0002_boring_vengeance",
+      "breakpoints": true
     }
   ]
 }
