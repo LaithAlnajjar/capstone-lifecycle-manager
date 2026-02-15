@@ -7,8 +7,8 @@ export enum BidStatus {
 export class SupervisorBid {
     constructor(
         public readonly id: string,
-        public readonly group_id: string,
-        public readonly supervisor_id: string,
+        public readonly groupId: string,
+        public readonly supervisorId: string,
         public readonly ranking: number,
         public readonly isApproved: boolean,
         public readonly status: BidStatus,

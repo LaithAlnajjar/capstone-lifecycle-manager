@@ -10,7 +10,7 @@ export class Submission {
         public readonly id:string,
         public readonly milestone_id:string,
         public readonly submitted_by:string,
-        public readonly file_url:string,
+        public readonly fileUrl:string,
         public readonly version_number:number,
         public readonly timestamp:Date,
         public readonly status:SubmissionStatus,

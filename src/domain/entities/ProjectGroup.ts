@@ -17,7 +17,7 @@ export class ProjectGroup {
         public readonly term_id: string,
         public readonly visibility: Visibility,
         public readonly status: ProjectGroupStatus,
-        public readonly invite_code: string,
+        public readonly inviteCode: string,
         public readonly createdAt: Date,
         public readonly updatedAt: Date,
     ) {}

@@ -13,6 +13,6 @@ export class AcademicTerm {
         public readonly createdAt: Date,
         public readonly isActive: boolean,
         public readonly status: AcademicTermStatus,
-        public readonly max_group_size: number,
+        public readonly maxGroupSize: number,
     ) {}
 }

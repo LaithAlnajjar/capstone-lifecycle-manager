@@ -140,6 +140,11 @@ export const project = pgTable("project", {
   abstract: text("abstract").notNull(),
   repository_url: text("repository_url").notNull(),
   final_grade: integer("final_grade"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at")
+    .defaultNow()
+    .$onUpdate(() => /* @__PURE__ */ new Date())
+    .notNull(),
 });
 
 export const projectRelations = relations(project as unknown as Table, ({ one }) => ({
