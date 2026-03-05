@@ -1,7 +1,7 @@
 export enum SubmissionStatus {
-    UNDER_REVIEW = "under_review",
-    NEEDS_REVISION = "needs_revision",
-    APPROVED = "approved",
+    PENDING = "pending",
+    IN_PROGRESS = "in_progress",
+    COMPLETED = "completed",
 }
 
 
@@ -14,7 +14,5 @@ export class Submission {
         public readonly version_number:number,
         public readonly timestamp:Date,
         public readonly status:SubmissionStatus,
-        public readonly createdAt:Date,
-        public readonly updatedAt:Date,
     ) {}
 }
