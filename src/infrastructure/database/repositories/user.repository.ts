@@ -15,16 +15,16 @@ export class UserRepository implements IUserRepository {
         if (!row) return null;
 
         return new User(
-       row.id,
-       row.name,
-       row.email,
-       row.emailVerified,
-       row.image ?? "",
-       row.createdAt,
-       row.updatedAt,
-       row.role as Role,
-       row.group_id ?? undefined,
-        );
+            row.id,
+            row.name,
+            row.email,
+            row.emailVerified,
+            row.image ?? "",
+            row.createdAt,
+            row.updatedAt,
+            row.role as Role,
+            row.group_id ?? undefined,
+                );
        
     }
 
